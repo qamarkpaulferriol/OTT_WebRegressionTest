@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify_Email_isRegistered</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3210287-b0e3-4c14-b2c7-c20c9147b256</testCaseGuid>
+</TestCaseEntity>

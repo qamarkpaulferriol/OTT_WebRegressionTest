@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify_MaximumChar_Email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>029e1a4f-6a12-4adf-8c32-f4415574e1ea</testCaseGuid>
+</TestCaseEntity>

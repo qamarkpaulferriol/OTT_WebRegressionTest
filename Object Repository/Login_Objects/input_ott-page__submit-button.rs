@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_ott-page__submit-button</name>
+   <tag></tag>
+   <elementGuidId>2612c329-2f68-4962-87e9-d8062fe4649e</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ott-page__submit-button ott-page-button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>submit</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>RESEND</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/app-resend-email-verification[1]/section[@class=&quot;ott-resend-email-verification-page&quot;]/div[@class=&quot;ott-resend-email-verification-page__container&quot;]/div[@class=&quot;ott-resend-email-verification__form-container&quot;]/form[@class=&quot;ott-page-form ng-untouched ng-pristine ng-invalid&quot;]/div[@class=&quot;ott-resend-email-verification__create-account&quot;]/div[@class=&quot;ott-page-form__button-wrap&quot;]/input[@class=&quot;ott-page__submit-button ott-page-button&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
