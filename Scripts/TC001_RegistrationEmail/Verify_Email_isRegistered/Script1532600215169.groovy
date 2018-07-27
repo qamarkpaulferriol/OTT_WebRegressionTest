@@ -27,8 +27,6 @@ WebUI.clearText(findTestObject('Registration_Objects/input_email'))
 
 WebUI.setText(findTestObject('Registration_Objects/input_email'), 'dmdqa.210@gmail.com')
 
-WebUI.check(findTestObject('Registration_Objects/label_rememberMeLabel'))
-
 WebUI.submit(findTestObject('ValidationMessage_Objects/input_regSubmitButton'))
 
 WebUI.verifyElementPresent(findTestObject('ValidationMessage_Objects/AlreadyRegistered/label_Oops The Email or Kapami'), 

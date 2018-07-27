@@ -4,6 +4,7 @@
    <name>Regression_Registration</name>
    <tag></tag>
    <isRerun>false</isRerun>
+   <lastRun>2018-07-27T15:55:43</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -87,5 +88,17 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC001_RegistrationEmail/Verify_Successful_Registration</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>df32fb9c-adba-454c-a5ae-78c8b45e9b49</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC002_Login/Verify_UnverifiedEmailAddress</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>04375ba6-d5ea-4068-a66c-3e4bf2806fed</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC002_Login/Verify_Email_isIncorrect</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

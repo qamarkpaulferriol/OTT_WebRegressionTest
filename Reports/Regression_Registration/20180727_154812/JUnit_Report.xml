@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Regression_Registration" time="28" tests="12" failures="1" errors="0">
+   <testsuite name="Regression_Registration" tests="12" failures="1" errors="0" time="28" timestamp="2018-07-27 15:48:15" hostname="abscbn - 10.32.88.124" id="Test Suites/Regression_Registration">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/abscbn/git/OTT_WebRegressionTest/Reports/Regression_Registration/20180727_154812"/>
+         <property name="logFiles" value="/Users/abscbn/git/OTT_WebRegressionTest/Reports/Regression_Registration/20180727_154812/execution0.log"/>
+         <property name="attachments" value="/Users/abscbn/git/OTT_WebRegressionTest/Reports/Regression_Registration/20180727_154812/1532677719807.png"/>
+         <property name="hostName" value="abscbn - 10.32.88.124"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="5.5.0.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="10.32.88.124"/>
+         <property name="sessionId" value="b868f9593bf0b88c5db5f648c0e2c579"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_Email_is_Invalid" classname="Test Cases/TC001_RegistrationEmail/Verify_Email_is_Invalid" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:15 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_Email_is_Invalid: Test Cases/TC001_RegistrationEmail/Verify_Email_is_Invalid
+
+2018-07-27 15:48:15 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://ott-web-prod.azurewebsites.net/registration'
+
+2018-07-27 15:48:31 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ott-web-prod.azurewebsites.net/registration'
+
+2018-07-27 15:48:31 - [TEST_STEP][PASSED] - setText: Text 'dmdqa' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:32 - [MESSAGE][PASSED] - Text 'dmdqa' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:32 - [TEST_STEP][PASSED] - setText: Text 'dmdqa' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:32 - [MESSAGE][PASSED] - Text 'dmdqa' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:32 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Please enter a valid ema' is present
+
+2018-07-27 15:48:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:32 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Please enter a valid ema' is present
+
+2018-07-27 15:48:32 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter a valid ema' are matched.
+
+2018-07-27 15:48:32 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter a valid ema' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_Email" classname="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_Email" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:32 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_Email: Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_Email
+
+2018-07-27 15:48:32 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_email' is cleared
+
+2018-07-27 15:48:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_email' is cleared
+
+2018-07-27 15:48:32 - [TEST_STEP][PASSED] - setText: Text 'dmdqazxsw2edcvfr4tgbjhashdasdjhajhakfjhasfjhafjahfjhafkjaf@gmail.com' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:33 - [MESSAGE][PASSED] - Text 'dmdqazxsw2edcvfr4tgbjhashdasdjhajhakfjhasfjhafjahfjhafkjaf@gmail.com' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:33 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Please enter an e-mail w' is present
+
+2018-07-27 15:48:33 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:33 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Please enter an e-mail w' is present
+
+2018-07-27 15:48:33 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter an e-mail w' are matched.
+
+2018-07-27 15:48:33 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter an e-mail w' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_MinimumChar_KN" classname="Test Cases/TC001_RegistrationEmail/Verify_MinimumChar_KN" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:33 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_MinimumChar_KN: Test Cases/TC001_RegistrationEmail/Verify_MinimumChar_KN
+
+2018-07-27 15:48:33 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_email' is cleared
+
+2018-07-27 15:48:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_email' is cleared
+
+2018-07-27 15:48:33 - [TEST_STEP][PASSED] - setText: Text 'dmdqa@gmail.com' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:34 - [MESSAGE][PASSED] - Text 'dmdqa@gmail.com' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:34 - [TEST_STEP][PASSED] - setText: Text 'dmd' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:34 - [MESSAGE][PASSED] - Text 'dmd' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:34 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name must' is present
+
+2018-07-27 15:48:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:34 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name must' is present
+
+2018-07-27 15:48:34 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name must' are matched.
+
+2018-07-27 15:48:34 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name must' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_KN" classname="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_KN" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:34 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_KN: Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_KN
+
+2018-07-27 15:48:34 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:34 - [TEST_STEP][PASSED] - setText: Text 'dmdqa1234567890qwertyuiopasdfghjklzxcvbnm1qazxsw23edcvfr4' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:34 - [MESSAGE][PASSED] - Text 'dmdqa1234567890qwertyuiopasdfghjklzxcvbnm1qazxsw23edcvfr4' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:34 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name must' is present
+
+2018-07-27 15:48:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:34 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name must' is present
+
+2018-07-27 15:48:34 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name must' are matched.
+
+2018-07-27 15:48:35 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name must' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_NumericValue_KN" classname="Test Cases/TC001_RegistrationEmail/Verify_NumericValue_KN" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:35 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_NumericValue_KN: Test Cases/TC001_RegistrationEmail/Verify_NumericValue_KN
+
+2018-07-27 15:48:35 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:35 - [TEST_STEP][PASSED] - setText: Text '097764625623' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:35 - [MESSAGE][PASSED] - Text '097764625623' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:35 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name need' is present
+
+2018-07-27 15:48:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:35 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name need' is present
+
+2018-07-27 15:48:35 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name need' are matched.
+
+2018-07-27 15:48:35 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Your Kapamilya Name need' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_EmailisNotAllowed_KN" classname="Test Cases/TC001_RegistrationEmail/Verify_EmailisNotAllowed_KN" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:35 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_EmailisNotAllowed_KN: Test Cases/TC001_RegistrationEmail/Verify_EmailisNotAllowed_KN
+
+2018-07-27 15:48:35 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:35 - [TEST_STEP][PASSED] - setText: Text 'dmdqa@gmail.com' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:35 - [MESSAGE][PASSED] - Text 'dmdqa@gmail.com' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:35 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Sorry. You cannot use yo' is present
+
+2018-07-27 15:48:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:36 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Sorry. You cannot use yo' is present
+
+2018-07-27 15:48:36 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Sorry. You cannot use yo' are matched.
+
+2018-07-27 15:48:36 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Sorry. You cannot use yo' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_FirstName" classname="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_FirstName" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:36 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_FirstName: Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_FirstName
+
+2018-07-27 15:48:36 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:36 - [TEST_STEP][PASSED] - setText: Text 'dmdRegression' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:36 - [MESSAGE][PASSED] - Text 'dmdRegression' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:36 - [TEST_STEP][PASSED] - setText: Text 'Markqazxswedcvfrtgbnhyujmkilopqazsxdwer' is set on object 'Object Repository/Registration_Objects/input_first_name'
+
+2018-07-27 15:48:36 - [MESSAGE][PASSED] - Text 'Markqazxswedcvfrtgbnhyujmkilopqazsxdwer' is set on object 'Object Repository/Registration_Objects/input_first_name'
+
+2018-07-27 15:48:36 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Please enter a First Nam' is present
+
+2018-07-27 15:48:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:36 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Please enter a First Nam' is present
+
+2018-07-27 15:48:36 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter a First Nam' are matched.
+
+2018-07-27 15:48:36 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter a First Nam' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_LastName" classname="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_LastName" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:36 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_LastName: Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_LastName
+
+2018-07-27 15:48:36 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_first_name' is cleared
+
+2018-07-27 15:48:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_first_name' is cleared
+
+2018-07-27 15:48:37 - [TEST_STEP][PASSED] - setText: Text 'Mark' is set on object 'Object Repository/Registration_Objects/input_first_name'
+
+2018-07-27 15:48:37 - [MESSAGE][PASSED] - Text 'Mark' is set on object 'Object Repository/Registration_Objects/input_first_name'
+
+2018-07-27 15:48:37 - [TEST_STEP][PASSED] - setText: Text 'Ferriolqazxswedcrfvbgtyhnmjukiolplokliujhnbhgtfgdredfe' is set on object 'Object Repository/Registration_Objects/input_last_name'
+
+2018-07-27 15:48:37 - [MESSAGE][PASSED] - Text 'Ferriolqazxswedcrfvbgtyhnmjukiolplokliujhnbhgtfgdredfe' is set on object 'Object Repository/Registration_Objects/input_last_name'
+
+2018-07-27 15:48:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Please enter a Last Name' is present
+
+2018-07-27 15:48:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:37 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Please enter a Last Name' is present
+
+2018-07-27 15:48:37 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter a Last Name' are matched.
+
+2018-07-27 15:48:37 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Please enter a Last Name' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_MinimumChar_Password" classname="Test Cases/TC001_RegistrationEmail/Verify_MinimumChar_Password" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:37 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_MinimumChar_Password: Test Cases/TC001_RegistrationEmail/Verify_MinimumChar_Password
+
+2018-07-27 15:48:37 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_last_name' is cleared
+
+2018-07-27 15:48:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_last_name' is cleared
+
+2018-07-27 15:48:37 - [TEST_STEP][PASSED] - setText: Text 'Ferriol' is set on object 'Object Repository/Registration_Objects/input_last_name'
+
+2018-07-27 15:48:38 - [MESSAGE][PASSED] - Text 'Ferriol' is set on object 'Object Repository/Registration_Objects/input_last_name'
+
+2018-07-27 15:48:38 - [TEST_STEP][PASSED] - setText: Text '!q' is set on object 'Object Repository/Registration_Objects/input_Password'
+
+2018-07-27 15:48:38 - [MESSAGE][PASSED] - Text '!q' is set on object 'Object Repository/Registration_Objects/input_Password'
+
+2018-07-27 15:48:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Password must contain at' is present
+
+2018-07-27 15:48:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:38 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Password must contain at' is present
+
+2018-07-27 15:48:38 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Password must contain at' are matched.
+
+2018-07-27 15:48:38 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Password must contain at' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_Password" classname="Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_Password" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:38 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_Password: Test Cases/TC001_RegistrationEmail/Verify_MaximumChar_Password
+
+2018-07-27 15:48:38 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_Password' is cleared
+
+2018-07-27 15:48:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_Password' is cleared
+
+2018-07-27 15:48:38 - [TEST_STEP][PASSED] - setText: Text '!qazxsw23edcvfr45tgbnhy67ujmki89olp0' is set on object 'Object Repository/Registration_Objects/input_Password'
+
+2018-07-27 15:48:38 - [MESSAGE][PASSED] - Text '!qazxsw23edcvfr45tgbnhy67ujmki89olp0' is set on object 'Object Repository/Registration_Objects/input_Password'
+
+2018-07-27 15:48:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/label_Maximum of 30 characters' is present
+
+2018-07-27 15:48:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:38 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/label_Maximum of 30 characters' is present
+
+2018-07-27 15:48:38 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Maximum of 30 characters' are matched.
+
+2018-07-27 15:48:39 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/label_Maximum of 30 characters' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_Email_isRegistered" classname="Test Cases/TC001_RegistrationEmail/Verify_Email_isRegistered" status="FAILED">
+         <failure type="FAILED" message="Unable to check object 'Object Repository/Registration_Objects/label_rememberMeLabel' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element &lt;label _ngcontent-c6=&quot;&quot; _ngcontent-c2=&quot;&quot; for=&quot;RememberMe&quot; id=&quot;rememberMeLabel&quot;>&lt;/label> is not clickable at point (440, 611). Other element would receive the click: &lt;div _ngcontent-c0=&quot;&quot; class=&quot;uc-sub-content&quot;>...&lt;/div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DMDQA.local', ip: 'fe80:0:0:0:ca2a:14ff:fe15:b6d7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/32/bhcmzvxs517...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: b868f9593bf0b88c5db5f648c0e2c579)"/>
+         <system-out><![CDATA[2018-07-27 15:48:39 - [TEST_CASE][FAILED] - Test Cases/TC001_RegistrationEmail/Verify_Email_isRegistered: Test Cases/TC001_RegistrationEmail/Verify_Email_isRegistered FAILED because (of) Unable to check object 'Object Repository/Registration_Objects/label_rememberMeLabel' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <label _ngcontent-c6="" _ngcontent-c2="" for="RememberMe" id="rememberMeLabel"></label> is not clickable at point (440, 611). Other element would receive the click: <div _ngcontent-c0="" class="uc-sub-content">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DMDQA.local', ip: 'fe80:0:0:0:ca2a:14ff:fe15:b6d7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/32/bhcmzvxs517...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: b868f9593bf0b88c5db5f648c0e2c579)
+
+2018-07-27 15:48:39 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_Password' is cleared
+
+2018-07-27 15:48:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_Password' is cleared
+
+2018-07-27 15:48:39 - [TEST_STEP][PASSED] - setText: Text '!qazxsw2' is set on object 'Object Repository/Registration_Objects/input_Password'
+
+2018-07-27 15:48:39 - [MESSAGE][PASSED] - Text '!qazxsw2' is set on object 'Object Repository/Registration_Objects/input_Password'
+
+2018-07-27 15:48:39 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_email' is cleared
+
+2018-07-27 15:48:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_email' is cleared
+
+2018-07-27 15:48:39 - [TEST_STEP][PASSED] - setText: Text 'dmdqa.210@gmail.com' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:39 - [MESSAGE][PASSED] - Text 'dmdqa.210@gmail.com' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:39 - [TEST_STEP][FAILED] - check: Unable to check object 'Object Repository/Registration_Objects/label_rememberMeLabel' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <label _ngcontent-c6="" _ngcontent-c2="" for="RememberMe" id="rememberMeLabel"></label> is not clickable at point (440, 611). Other element would receive the click: <div _ngcontent-c0="" class="uc-sub-content">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DMDQA.local', ip: 'fe80:0:0:0:ca2a:14ff:fe15:b6d7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/32/bhcmzvxs517...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: b868f9593bf0b88c5db5f648c0e2c579)
+
+2018-07-27 15:48:40 - [MESSAGE][FAILED] - Unable to check object 'Object Repository/Registration_Objects/label_rememberMeLabel' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <label _ngcontent-c6="" _ngcontent-c2="" for="RememberMe" id="rememberMeLabel"></label> is not clickable at point (440, 611). Other element would receive the click: <div _ngcontent-c0="" class="uc-sub-content">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DMDQA.local', ip: 'fe80:0:0:0:ca2a:14ff:fe15:b6d7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/32/bhcmzvxs517...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: b868f9593bf0b88c5db5f648c0e2c579)
+[[ATTACHMENT|/Users/abscbn/git/OTT_WebRegressionTest/Reports/Regression_Registration/20180727_154812/1532677719807.png]]
+
+2018-07-27 15:48:40 - [TEST_STEP][PASSED] - submit: The form containing object: 'Object Repository/ValidationMessage_Objects/input_regSubmitButton' is submitted
+
+2018-07-27 15:48:40 - [MESSAGE][PASSED] - The form containing object: 'Object Repository/ValidationMessage_Objects/input_regSubmitButton' is submitted
+
+2018-07-27 15:48:40 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/AlreadyRegistered/label_Oops The Email or Kapami' is present
+
+2018-07-27 15:48:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:41 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/AlreadyRegistered/label_Oops The Email or Kapami' is present
+
+2018-07-27 15:48:41 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/AlreadyRegistered/label_Oops The Email or Kapami' are matched.
+
+2018-07-27 15:48:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/AlreadyRegistered/label_Oops The Email or Kapami' are matched.]]></system-out>
+         <system-err><![CDATA[2018-07-27 15:48:39 - [TEST_CASE][FAILED] - Test Cases/TC001_RegistrationEmail/Verify_Email_isRegistered: Test Cases/TC001_RegistrationEmail/Verify_Email_isRegistered FAILED because (of) Unable to check object 'Object Repository/Registration_Objects/label_rememberMeLabel' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <label _ngcontent-c6="" _ngcontent-c2="" for="RememberMe" id="rememberMeLabel"></label> is not clickable at point (440, 611). Other element would receive the click: <div _ngcontent-c0="" class="uc-sub-content">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DMDQA.local', ip: 'fe80:0:0:0:ca2a:14ff:fe15:b6d7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/32/bhcmzvxs517...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: b868f9593bf0b88c5db5f648c0e2c579)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_KN_isRegistered" classname="Test Cases/TC001_RegistrationEmail/Verify_KN_isRegistered" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:41 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_KN_isRegistered: Test Cases/TC001_RegistrationEmail/Verify_KN_isRegistered
+
+2018-07-27 15:48:41 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_email' is cleared
+
+2018-07-27 15:48:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_email' is cleared
+
+2018-07-27 15:48:41 - [TEST_STEP][PASSED] - setText: Text 'dmdqavalid@gmail.com' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:41 - [MESSAGE][PASSED] - Text 'dmdqavalid@gmail.com' is set on object 'Object Repository/Registration_Objects/input_email'
+
+2018-07-27 15:48:41 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:41 - [TEST_STEP][PASSED] - setText: Text 'dmdqa-abs-postpaid' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:42 - [MESSAGE][PASSED] - Text 'dmdqa-abs-postpaid' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:42 - [TEST_STEP][PASSED] - submit: The form containing object: 'Object Repository/ValidationMessage_Objects/input_regSubmitButton' is submitted
+
+2018-07-27 15:48:42 - [MESSAGE][PASSED] - The form containing object: 'Object Repository/ValidationMessage_Objects/input_regSubmitButton' is submitted
+
+2018-07-27 15:48:42 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/ValidationMessage_Objects/AlreadyRegistered/label_Oops The Email or Kapami' is present
+
+2018-07-27 15:48:42 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-27 15:48:42 - [MESSAGE][PASSED] - Object 'Object Repository/ValidationMessage_Objects/AlreadyRegistered/label_Oops The Email or Kapami' is present
+
+2018-07-27 15:48:42 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/AlreadyRegistered/label_Oops The Email or Kapami' are matched.
+
+2018-07-27 15:48:42 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ValidationMessage_Objects/AlreadyRegistered/label_Oops The Email or Kapami' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC001_RegistrationEmail/Verify_Successful_Registration" classname="Test Cases/TC001_RegistrationEmail/Verify_Successful_Registration" status="PASSED">
+         <system-out><![CDATA[2018-07-27 15:48:42 - [TEST_CASE][PASSED] - Test Cases/TC001_RegistrationEmail/Verify_Successful_Registration: Test Cases/TC001_RegistrationEmail/Verify_Successful_Registration
+
+2018-07-27 15:48:42 - [TEST_STEP][PASSED] - clearText: Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:42 - [MESSAGE][PASSED] - Text of object 'Object Repository/Registration_Objects/input_username' is cleared
+
+2018-07-27 15:48:42 - [TEST_STEP][PASSED] - setText: Text 'dmd@Regression' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:42 - [MESSAGE][PASSED] - Text 'dmd@Regression' is set on object 'Object Repository/Registration_Objects/input_username'
+
+2018-07-27 15:48:42 - [TEST_STEP][PASSED] - submit: The form containing object: 'Object Repository/ValidationMessage_Objects/input_regSubmitButton' is submitted
+
+2018-07-27 15:48:42 - [MESSAGE][PASSED] - The form containing object: 'Object Repository/ValidationMessage_Objects/input_regSubmitButton' is submitted
+
+2018-07-27 15:48:42 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-27 15:48:43 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-27 15:48:15 - [TEST_SUITE][FAILED] - Regression_Registration: Test Cases/TC001_RegistrationEmail/Verify_Email_isRegistered FAILED because (of) Unable to check object 'Object Repository/Registration_Objects/label_rememberMeLabel' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <label _ngcontent-c6="" _ngcontent-c2="" for="RememberMe" id="rememberMeLabel"></label> is not clickable at point (440, 611). Other element would receive the click: <div _ngcontent-c0="" class="uc-sub-content">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DMDQA.local', ip: 'fe80:0:0:0:ca2a:14ff:fe15:b6d7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/32/bhcmzvxs517...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: b868f9593bf0b88c5db5f648c0e2c579)]]></system-out>
+      <system-err><![CDATA[2018-07-27 15:48:15 - [TEST_SUITE][FAILED] - Regression_Registration: Test Cases/TC001_RegistrationEmail/Verify_Email_isRegistered FAILED because (of) Unable to check object 'Object Repository/Registration_Objects/label_rememberMeLabel' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <label _ngcontent-c6="" _ngcontent-c2="" for="RememberMe" id="rememberMeLabel"></label> is not clickable at point (440, 611). Other element would receive the click: <div _ngcontent-c0="" class="uc-sub-content">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DMDQA.local', ip: 'fe80:0:0:0:ca2a:14ff:fe15:b6d7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/32/bhcmzvxs517...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: b868f9593bf0b88c5db5f648c0e2c579)]]></system-err>
+   </testsuite>
+</testsuites>
