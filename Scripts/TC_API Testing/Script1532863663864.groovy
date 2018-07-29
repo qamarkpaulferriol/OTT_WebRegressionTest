@@ -18,12 +18,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC002_Login/Verify_UnverifiedEmailAddress'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+response = WS.sendRequest(findTestObject('Get sample API Testing'))
 
-WebUI.callTestCase(findTestCase('TC002_Login/Verify_Email_isIncorrect'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WS.verifyResponseStatusCode(response, 200)
 
-WebUI.callTestCase(findTestCase('TC002_Login/Verify_ForgotKapamilyaName'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('TC002_Login/Verify_ForgotPassword'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WS.verifyElementPropertyValue(response, 'plans_and_bundle_id', '604')
 

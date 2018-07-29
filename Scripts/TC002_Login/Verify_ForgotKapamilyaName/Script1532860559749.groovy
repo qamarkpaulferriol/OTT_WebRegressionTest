@@ -19,11 +19,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('TC002_Login/Verify_UnverifiedEmailAddress'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.clearText(findTestObject('Login_Objects/input_username'))
 
-WebUI.callTestCase(findTestCase('TC002_Login/Verify_Email_isIncorrect'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.clearText(findTestObject('Login_Objects/input_Password'))
 
-WebUI.callTestCase(findTestCase('TC002_Login/Verify_ForgotKapamilyaName'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Login_Objects/a_Forgot Kapamilya Name'))
 
-WebUI.callTestCase(findTestCase('TC002_Login/Verify_ForgotPassword'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForPageLoad(0)
+
+WebUI.navigateToUrl('https://ott-web-prod.azurewebsites.net/forgot-kapamilya-name')
+
+'Account does not exist'
+WebUI.setText(findTestObject('Login_Objects/input_EMail'), '012345678978')
+
+WebUI.submit(findTestObject('Login_Objects/input_ott-page__submit-button'))
+
+WebUI.verifyElementPresent(findTestObject('Login_Objects/ValidationMessage/label_Account does not exist.'), 0)
+
+WebUI.verifyElementText(findTestObject('Login_Objects/ValidationMessage/label_Account does not exist.'), 'Account does not exist.')
+
+WebUI.clearText(findTestObject('Login_Objects/input_EMail'))
+
+'Email is incorrect'
+WebUI.setText(findTestObject('Login_Objects/input_EMail'), 'dm')
+
+WebUI.submit(findTestObject('Login_Objects/input_ott-page__submit-button'))
+
+WebUI.verifyElementPresent(findTestObject('Login_Objects/ValidationMessage/label_Sorry the number you ent'), 0)
+
+WebUI.verifyElementText(findTestObject('Login_Objects/ValidationMessage/label_Sorry the number you ent'), 'Sorry, the number you entered is invalid or incomplete. Please check and try again.')
+
+WebUI.click(findTestObject('Login_Objects/Go Back/a_GO BACK'))
 

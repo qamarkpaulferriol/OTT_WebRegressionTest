@@ -19,11 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://ott-web-prod.azurewebsites.net/login')
+WebUI.click(findTestObject('Login_Objects/a_Forgot Password'))
 
-WebUI.setText(findTestObject('Login_Objects/input_username'), varUserName)
+'Account does not exist'
+WebUI.setText(findTestObject('Login_Objects/input_EMail'), '012345678912')
 
-WebUI.setText(findTestObject('Login_Objects/input_Password'), varPassword)
+WebUI.submit(findTestObject('Login_Objects/input_ott-page__submit-button'))
 
-WebUI.submit(findTestObject('Login_Objects/input_submit'))
+WebUI.verifyElementPresent(findTestObject('Login_Objects/ValidationMessage/label_Account does not exist.'), 0)
+
+WebUI.verifyElementText(findTestObject('Login_Objects/ValidationMessage/label_Account does not exist.'), 'Account does not exist.')
+
+WebUI.clearText(findTestObject('Login_Objects/input_EMail'))
+
+'Invalid account entered'
+WebUI.setText(findTestObject('Login_Objects/input_EMail'), 'dmd')
+
+WebUI.verifyElementPresent(findTestObject('Login_Objects/ValidationMessage/label_Sorry the number you ent'), 0)
+
+WebUI.verifyElementText(findTestObject('Login_Objects/ValidationMessage/label_Sorry the number you ent'), 'Sorry, the number you entered is invalid or incomplete. Please check and try again.')
+
+WebUI.click(findTestObject('Login_Objects/Go Back/a_GO BACK'))
 

@@ -19,9 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.clearText(findTestObject('Login_Objects/input_username'))
-
-WebUI.clearText(findTestObject('Login_Objects/input_Password'))
-
 WebUI.click(findTestObject('Login_Objects/a_Forgot Kapamilya Name'))
+
+WebUI.setText(findTestObject('Login_Objects/input_EMail'), 'dmdqa.210@gmail.com')
+
+WebUI.submit(findTestObject('Login_Objects/input_submit'))
+
+WebUI.switchToWindowUrl('https://www.google.com/gmail/about/#')
 
