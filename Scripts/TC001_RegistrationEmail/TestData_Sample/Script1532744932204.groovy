@@ -19,13 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser(varLoginURL)
+WebUI.openBrowser('https://ott-web-prod.azurewebsites.net/login')
 
-WebUI.setText(findTestObject('Login_Objects/input_username'), 'dmdqavalid@gmail.com')
+WebUI.setText(findTestObject('Login_Objects/input_username'), varUserName)
 
-WebUI.setText(findTestObject('Login_Objects/input_Password'), '!qazxsw2')
+WebUI.setText(findTestObject('Login_Objects/input_Password'), varPassword)
 
 WebUI.submit(findTestObject('Login_Objects/input_submit'))
-
-WebUI.click(findTestObject('Login_Objects/GoBack'))
 

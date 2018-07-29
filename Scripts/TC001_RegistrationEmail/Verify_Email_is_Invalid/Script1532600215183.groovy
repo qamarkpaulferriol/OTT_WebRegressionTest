@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://ott-web-prod.azurewebsites.net/registration')
+WebUI.openBrowser(varURL)
 
 WebUI.setText(findTestObject('Registration_Objects/input_email'), 'dmdqa')
 

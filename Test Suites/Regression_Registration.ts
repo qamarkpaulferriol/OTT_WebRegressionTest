@@ -4,7 +4,7 @@
    <name>Regression_Registration</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-07-27T15:55:43</lastRun>
+   <lastRun>2018-07-28T12:15:51</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -16,6 +16,21 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC001_RegistrationEmail/Verify_Email_is_Invalid</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>2ad3cb7d-8a69-429c-aa7e-a328e5ee5aa8</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
+         </iterationEntity>
+         <testDataId>Data Files/TestDataURL</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>2ad3cb7d-8a69-429c-aa7e-a328e5ee5aa8</testDataLinkId>
+         <type>DATA_COLUMN_INDEX</type>
+         <value>1</value>
+         <variableId>89cf72e1-3338-4779-81b0-bfbcf88d4dc0</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>c285aee1-65be-41eb-9603-20d821b43c63</guid>
@@ -90,13 +105,28 @@
       <testCaseId>Test Cases/TC001_RegistrationEmail/Verify_Successful_Registration</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>df32fb9c-adba-454c-a5ae-78c8b45e9b49</guid>
+      <guid>4b462013-b937-42b0-baf8-5d8f13571e96</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC002_Login/Verify_UnverifiedEmailAddress</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>e2187e3a-c88a-4ea4-8f0e-7eb59180b71c</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
+         </iterationEntity>
+         <testDataId>Data Files/TestDataURL</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9ebf8ebb-8485-46c3-ab60-fe13517bb166</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>04375ba6-d5ea-4068-a66c-3e4bf2806fed</guid>
+      <guid>e7e7528a-d182-49af-9527-a10167e32162</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC002_Login/Verify_Email_isIncorrect</testCaseId>
