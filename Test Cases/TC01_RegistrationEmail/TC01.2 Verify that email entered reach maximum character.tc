@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01.2 Verify that email entered reach maximum character</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>029e1a4f-6a12-4adf-8c32-f4415574e1ea</testCaseGuid>
+</TestCaseEntity>

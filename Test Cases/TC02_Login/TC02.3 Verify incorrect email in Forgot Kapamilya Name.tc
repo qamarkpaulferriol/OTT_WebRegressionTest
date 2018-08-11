@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02.3 Verify incorrect email in Forgot Kapamilya Name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb07289d-2075-49c2-a280-07606609afd6</testCaseGuid>
+</TestCaseEntity>

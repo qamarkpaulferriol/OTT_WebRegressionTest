@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01.4 Verify that Kapamilya Name entered have maximum character</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>181011be-ca7a-47aa-a389-e92291cb37e4</testCaseGuid>
+</TestCaseEntity>

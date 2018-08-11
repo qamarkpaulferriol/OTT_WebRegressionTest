@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01.7 Verify the maximum characters of FirstName</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b14fe785-3367-40a1-bb11-985e34183c61</testCaseGuid>
+</TestCaseEntity>

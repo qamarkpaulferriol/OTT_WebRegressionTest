@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02.2 Verify if Email is incorrect</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff44776f-68a0-4e16-b4de-fadee810e2cf</testCaseGuid>
+</TestCaseEntity>
